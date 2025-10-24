@@ -1,5 +1,6 @@
-class Submarino {
+import { Configuracion } from "../tablero/Configuracion";
 
+class Submarino {
     private x: number;
     private y: number;
 
@@ -8,9 +9,9 @@ class Submarino {
         this.y = 0;
     }
 
-    public init(): void {
-        this.x = Math.floor(Math.random() * 10);
-        this.y = Math.floor(Math.random() * 10);
+    public init(size: number): void {
+        this.x = Math.floor(Math.random() * size);
+        this.y = Math.floor(Math.random() * size);
     }
 }
 

@@ -10,7 +10,7 @@ class Tablero {
     }
 
     public init(config: Configuracion) {
-        this.mapa = Array.from({length: config.size},() =>Array(config.size).fill(0)
+        this.mapa = Array.from({length: config.size},() =>Array.from({length: config.size}, () => 0)
     );
     this.submarino.init(config.size);
 
